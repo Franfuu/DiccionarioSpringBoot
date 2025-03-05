@@ -51,4 +51,7 @@ public class Palabra {
         this.definicions = definicions;
     }
 
+    public Set<Definicion> getDefinicions() {
+        return definicions;
+    }
 }
