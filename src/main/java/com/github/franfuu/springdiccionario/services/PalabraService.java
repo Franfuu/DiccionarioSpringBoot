@@ -94,11 +94,6 @@ public class PalabraService {
         return palabraRepository.findByInicial(inicial);
     }
 
-/*
-    public Palabra savePalabraAndDefinicion(Palabra palabra) {
-        palabra.getDefinicions().forEach(definicion -> definicion.setPalabra(palabra));
-        return palabraRepository.save(palabra);
-    }*/
 
     public Palabra savePalabraAndDefinicion(Palabra palabra) {
         Palabra savedPalabra = palabraRepository.save(palabra);
